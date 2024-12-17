@@ -1,0 +1,242 @@
+:root {
+    ---lavanda: #fff0f5;
+    ---nav: #ffccd5;
+    ---letra: #e63946;
+    ---navl: #474747;
+    ---branco: #FFFAFA;
+    ---hover: #c0273b;
+    ---puro: #fff;
+    ---amarelo: #feb500;
+    ---botao: #ff6f91;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(---lavanda);
+    color: var(---navl);
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    background-color:var(---nav);
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    flex-direction: column;
+    font-family: Playfair Display;
+}
+
+nav .logo a {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(---letra);
+    text-decoration: none;
+    padding-left: 5rem;
+}
+
+nav .logo a:hover {
+    color: var(---hover); 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 15rem;
+    padding-right: 9rem;
+}
+
+nav .logo {
+    margin-right: auto;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: var(---navl);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    color: var(---letra);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: Dancing Script;
+}
+
+.quiz-container {
+    background-color: var(---puro);
+    border: 2px solid var(---nav);
+    border-radius: 10px;
+    width: 90%; /* Ajuste padrão */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question h2 {
+    color: var(---navl);
+    font-family: Crimson Text;
+}
+
+label {
+    color: var(---navl);
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: Crimson Text;
+}
+
+button {
+    background-color: var(---botao);
+    color: var(---puro);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    height: 45px;
+}
+
+button:hover {
+    background-color: var(---amarelo);
+}
+
+a{
+    color: var(---branco);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.result-container {
+    background-color: var(---puro);
+    border: 2px solid var(---nav);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.correct {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Estilos principais (já existentes) aqui */
+
+/* Para dispositivos com largura máxima de 768px */
+@media (max-width: 768px) {
+    nav .logo a {
+        font-size: 2rem;
+        padding-left: 3rem;
+    }
+
+    nav ul {
+        gap: 5rem;
+        padding-right: 5rem;
+        flex-direction: column;
+    }
+
+    .quiz-container, .result-container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Para dispositivos com largura máxima de 480px */
+@media (max-width: 480px) {
+    nav .logo a {
+        font-size: 1.8rem;
+        padding-left: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding-right: 0;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .quiz-container, .result-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        height: 45px;
+    }
+}
+
+/* Para dispositivos com largura máxima de 320px */
+@media (max-width: 320px) {
+    nav .logo a {
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .quiz-container, .result-container {
+        width: 95%;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        height: 40px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}

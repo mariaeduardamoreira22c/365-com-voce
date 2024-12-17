@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jomhuria&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Quiz do Amor</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="index.html">You&Me</a></li>
+                <li><a href="album.html">Álbum</a></li>
+                <li><a href="contagem.html">Contagem</a></li>
+                <li><a href="musicas.html">Músicas</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Quiz do Amor</h1>
+        <div class="quiz-container">
+            <div class="question">
+                <h2>1. Onde nos conhecemos?</h2>
+                <label><input type="radio" name="q1" value="a"> Instagram</label><br>
+                <label><input type="radio" name="q1" value="b"> Pagode</label><br>
+                <label><input type="radio" name="q1" value="c"> Shopping</label>
+            </div>
+
+            <div class="question">
+                <h2>2. Quem tomou a iniciativa primeiro?</h2>
+                <label><input type="radio" name="q2" value="a"> Ele</label><br>
+                <label><input type="radio" name="q2" value="b"> Ela</label><br>
+            </div>
+
+            <div class="question">
+                <h2>3. Quem deu o primeiro beijo?</h2>
+                <label><input type="radio" name="q3" value="a"> Ele</label><br>
+                <label><input type="radio" name="q3" value="b"> Ela</label><br>
+            </div>
+
+            <div class="question">
+                <h2>4. Onde foi nosso primeiro encontro?</h2>
+                <label><input type="radio" name="q4" value="a"> Balada</label><br>
+                <label><input type="radio" name="q4" value="b"> Shopping</label><br>
+                <label><input type="radio" name="q4" value="c"> Lanchonete</label>
+            </div>
+
+            <div class="question">
+                <h2>5. Que dia você me pediu em namoro?</h2>
+                <label><input type="radio" name="q5" value="a"> Dia 14</label><br>
+                <label><input type="radio" name="q5" value="b"> Dia 16</label><br>
+                <label><input type="radio" name="q5" value="c"> Dia 17</label>
+            </div>
+
+            <div class="question">
+                <h2>6. Que dia a gente se conheceu?</h2>
+                <label><input type="radio" name="q6" value="a"> Dia 14</label><br>
+                <label><input type="radio" name="q6" value="b"> Dia 16</label><br>
+                <label><input type="radio" name="q6" value="c"> Dia 17</label>
+            </div>
+
+            <div class="question">
+                <h2>7. O que mais comemos juntos?</h2>
+                <label><input type="radio" name="q7" value="a"> Hambúrguer</label><br>
+                <label><input type="radio" name="q7" value="b"> Pizza</label><br>
+                <label><input type="radio" name="q7" value="c"> Salgado</label>
+            </div>
+
+            <div class="question">
+                <h2>8. Qual foi o dia que vc me deu a primeira flor?</h2>
+                <label><input type="radio" name="q8" value="a"> Dia 10</label><br>
+                <label><input type="radio" name="q8" value="b"> Dia 12</label><br>
+                <label><input type="radio" name="q8" value="c"> Dia 17</label>
+            </div>
+
+            <div class="question">
+                <h2>9. Qual foi a primeira comida que dividimos?</h2>
+                <label><input type="radio" name="q9" value="a"> Batata frita</label><br>
+                <label><input type="radio" name="q9" value="b"> Hambúrguer</label><br>
+                <label><input type="radio" name="q9" value="c"> Sorvete</label>
+            </div>
+
+            <div class="question">
+                <h2>10. O que comemos no nosso primeiro encontro?</h2>
+                <label><input type="radio" name="q10" value="a"> McDonalds</label><br>
+                <label><input type="radio" name="q10" value="b"> Burguer King</label><br>
+                <label><input type="radio" name="q10" value="c"> Habibs</label>
+            </div>
+
+            <div id="result" class="result-container"></div>
+
+            <button id="submit-quiz">Enviar</button>
+            <button><a href="jogos.html">Voltar</a></button>
+        </div>
+        <div id="result" class="result-container"></div>
+    </main>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

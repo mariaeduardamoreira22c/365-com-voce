@@ -1,0 +1,244 @@
+:root {
+    ---lavanda: #fff0f5;
+    ---nav: #ffccd5;
+    ---letra: #e63946;
+    ---navl: #474747;
+    ---branco: #FFFAFA;
+    ---hover: #c0273b;
+    ---puro: #fff;
+    ---amarelo: #feb500;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(---lavanda);
+    color: var(---navl);
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    background-color: var(---nav);
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    flex-direction: column;
+    font-family: Playfair Display;
+}
+
+nav .logo a {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(---letra);
+    text-decoration: none;
+    padding-left: 5rem;
+}
+
+nav .logo a:hover {
+    color: var(---hover); 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 15rem;
+    padding-right: 9rem;
+}
+
+nav .logo {
+    margin-right: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(---navl);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container img {
+    max-width: 390px;
+    height: 390px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Estilizando os botões */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+button {
+    width: 150px; /* Definindo largura padrão */
+    height: 50px; /* Definindo altura padrão */
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(---branco);
+    background-color: var(---letra);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: var(---puro);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(---amarelo);
+}
+
+.quiz, .caca {
+    background-color: var(---nav);
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column; /* Botões em coluna em telas pequenas */
+        gap: 0.5rem;
+    }
+
+    button {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .logo a {
+        font-size: 2rem;
+        padding-left: 5rem;
+    }
+
+    nav ul {
+        gap: 5rem;
+        padding-right: 5rem;
+    }
+
+    .container img {
+        max-width: 450px;
+        height: 450px;
+        border-radius: 10px;
+        margin-bottom: 1rem;        
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+    .buttons {
+        gap: 1rem;
+    }
+
+    button {
+        width: 300px;
+        height: 60px;
+        font-size: 1rem;
+    }
+    a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile Médio (480px) */
+@media (max-width: 480px) {
+    nav .logo a {
+        font-size: 1.8rem;
+        padding-left: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding-right: 0;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .container img {
+        max-width: 310px;
+        height: 310px;
+        border-radius: 10px;
+        margin-bottom: 1rem;        
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .buttons {
+        gap: 0.8rem;
+    }
+
+    button {
+        width: 220px;
+        height: 40px;
+        font-size: 0.85rem;
+        height: 45px;
+    }
+    a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Pequeno (320px) */
+@media (max-width: 320px) {
+    nav .logo a {
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+        padding-right: 2rem;
+    }
+
+    .container img {
+        max-width: 220px;
+        height: 220px;
+        border-radius: 10px;
+        margin-bottom: 1rem;        
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    .buttons {
+        gap: 0.5rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        height: 40px;
+    }
+    a {
+        font-size: 0.8rem;
+    }
+}

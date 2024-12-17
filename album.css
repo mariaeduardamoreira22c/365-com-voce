@@ -1,0 +1,209 @@
+:root {
+    ---lavanda: #fff0f5;
+    ---nav: #ffccd5;
+    ---letra: #e63946;
+    ---navl: #474747;
+    ---branco: #FFFAFA;
+    ---hover: #c0273b;
+    ---puro: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(---lavanda);
+    color: var(---navl);
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    background-color:var(---nav);
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    flex-direction: column;
+    font-family: Playfair Display;
+}
+
+nav .logo a {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(---letra);
+    text-decoration: none;
+    padding-left: 5rem;
+}
+
+nav .logo a:hover {
+    color: var(---hover); 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 15rem;
+    padding-right: 9rem;
+}
+
+nav .logo {
+    margin-right: auto;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: var(---navl);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.album .container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.album h2 {
+    color: var(---letra);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: Dancing Script;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 40px 50px;
+    justify-items: center;
+}
+
+.foto {
+    background: var(---branco);
+    width: 300px;
+    display: flex;
+    height: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.foto img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    nav .logo a {
+        font-size: 1.8rem;
+        padding-left: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding-right: 0;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .grid-fotos {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .foto {
+        width: 250px;
+        height: 300px;
+    }
+
+    .foto img {
+        width: 250px;
+        height: 250px;
+    }
+    .album h2{
+        font-size: 2rem;
+    }
+}
+
+/* Tamanho médio: 481px a 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    nav .logo a {
+        font-size: 2rem;
+        padding-left: 2rem;
+    }
+
+    nav ul {
+        gap: 5rem;
+        padding-right: 2rem;
+    }
+
+    .grid-fotos {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px;
+    }
+
+    .foto {
+        width: 280px;
+        height: 320px;
+    }
+
+    .foto img {
+        width: 280px;
+        height: 280px;
+    }
+    .album h2{
+        font-size: 2rem;
+    }
+}
+
+/* Tamanho grande: 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav .logo a {
+        font-size: 2.2rem;
+        padding-left: 3rem;
+    }
+
+    nav ul {
+        gap: 8rem;
+        padding-right: 4rem;
+    }
+
+    .grid-fotos {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 40px;
+    }
+
+    .foto {
+        width: 300px;
+        height: 350px;
+    }
+
+    .foto img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav .logo a {
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+        padding-right: 2rem;
+    }
+
+    .album h2{
+        font-size: 1.8rem;
+    }
+}
